@@ -2,15 +2,19 @@
 
 Demonstrates how to use the convex_flutter plugin.
 
-## Getting Started
+## Usage Example
 
-This project is a starting point for a Flutter application.
+Here's an example of how to send a message using a Convex mutation:
 
-A few resources to get you started if this is your first Flutter project:
+```dart
+await ConvexClient.instance.mutation(
+  name: "messages:send",
+  args: {"body": message, "author": "Singh"},
+);
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Here's an example of how to query the backend:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```dart
+final result = await client.query('your_query');
+```
