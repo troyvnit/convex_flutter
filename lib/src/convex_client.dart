@@ -1,4 +1,5 @@
 import 'package:convex_flutter/convex_flutter.dart';
+import 'package:convex_flutter/src/lib/utils.dart';
 
 class ConvexClient {
   static ConvexClient? _instance;
@@ -25,7 +26,8 @@ class ConvexClient {
 
   /// Executes a Convex query.
   Future<String> query(String name, Map<String, String> args) async {
-    return await _client.query(name: name, args: args);
+    final formattedArgs = buildArgs(args);
+    return await _client.query(name: name, args: formattedArgs);
   }
 
   /// Subscribes to real-time updates from a Convex query.
@@ -36,9 +38,10 @@ class ConvexClient {
     required void Function(String) onUpdate,
     required void Function(String, String?) onError,
   }) async {
+    final formattedArgs = buildArgs(args);
     return await _client.subscribe(
       name: name,
-      args: args,
+      args: formattedArgs,
       onUpdate: (value) => onUpdate(value),
       onError: (message, value) => onError(message, value),
     );
@@ -47,17 +50,19 @@ class ConvexClient {
   /// Executes a Convex mutation.
   Future<String> mutation({
     required String name,
-    required Map<String, String> args,
+    required Map<String, dynamic> args,
   }) async {
-    return await _client.mutation(name: name, args: args);
+    final formattedArgs = buildArgs(args);
+    return await _client.mutation(name: name, args: formattedArgs);
   }
 
   /// Executes a Convex action.
   Future<String> action({
     required String name,
-    required Map<String, String> args,
+    required Map<String, dynamic> args,
   }) async {
-    return await _client.action(name: name, args: args);
+    final formattedArgs = buildArgs(args);
+    return await _client.action(name: name, args: formattedArgs);
   }
 
   /// Sets the authentication token for the client.

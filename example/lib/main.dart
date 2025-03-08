@@ -57,7 +57,7 @@ class _MyAppState extends State<MyApp> {
   sendMessage(String message) async {
     await ConvexClient.instance.mutation(
       name: "messages:send",
-      args: {"body": "message", "author": "Singh"},
+      args: {"body": message, "author": "Singh"},
     );
   }
 
