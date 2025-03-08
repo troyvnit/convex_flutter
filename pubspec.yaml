@@ -6,7 +6,7 @@ description:
   Flutter. It includes comprehensive APIs for transaction management, account handling,
   and real-time blockchain data synchronization, making it easier to develop
   blockchain-powered mobile applications.
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/socialmohansingh/convex_flutter
 homepage: https://jkuldev.com
 
