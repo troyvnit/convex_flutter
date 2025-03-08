@@ -1,7 +1,13 @@
 name: convex_flutter
-description: A Flutter package for Convex.
+description:
+  A Flutter package for Convex, providing seamless integration with the Convex
+  blockchain platform. This package enables developers to interact with Convex smart
+  contracts, manage digital assets, and build decentralized applications (dApps) using
+  Flutter. It includes comprehensive APIs for transaction management, account handling,
+  and real-time blockchain data synchronization, making it easier to develop
+  blockchain-powered mobile applications.
 version: 1.0.0
-repository: https://github.com/jkuldev/convex_flutter
+repository: https://github.com/socialmohansingh/convex_flutter
 homepage: https://jkuldev.com
 
 environment:
