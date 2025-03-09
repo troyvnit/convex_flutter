@@ -18,7 +18,7 @@ Add the package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  convex_flutter: ^0.1.0 # Replace with the actual version
+  convex_flutter: ^1.0.2 # Replace with the actual version
 ```
 
 ## Usage
@@ -231,16 +231,6 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 ## License
 
 This package is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Support
-
-For issues or questions, please [open an issue](../../issues) on the GitHub repository or contact the maintainers.
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-## License
 
 ```
 
