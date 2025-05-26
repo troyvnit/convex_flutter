@@ -7,3 +7,7 @@
 - Added support for Flutter 3.12.0
 - Added support for Flutter 3.13.0
 - Added support for Flutter 3.14.0
+
+## 1.0.2
+
+- Updated flutter_rust_bridge package to 2.9.0
