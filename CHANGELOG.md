@@ -11,3 +11,7 @@
 ## 1.0.3
 
 - Updated flutter_rust_bridge package to 2.9.0
+
+## 1.0.4
+
+- Updated flutter_rust_bridge package to 2.10.0
