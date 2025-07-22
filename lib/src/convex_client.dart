@@ -110,7 +110,7 @@ class ConvexClient {
   /// Returns a handle that can be used to manage the subscription
   Future<ArcSubscriptionHandle> subscribe({
     required String name,
-    required Map<String, String> args,
+    required Map<String, dynamic> args,
     required void Function(String) onUpdate,
     required void Function(String, String?) onError,
   }) async {
