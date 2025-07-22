@@ -95,7 +95,7 @@ class ConvexClient {
   /// [args] - Map of arguments to pass to the query
   ///
   /// Returns the query result as a JSON string
-  Future<String> query(String name, Map<String, String> args) async {
+  Future<String> query(String name, Map<String, dynamic> args) async {
     final formattedArgs = buildArgs(args);
     return await _client.query(name: name, args: formattedArgs);
   }
